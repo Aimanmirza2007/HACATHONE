@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ----------------------------------------------NAVBAR SECTION--------------------------------------- */
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding-top: 20px;
+    margin: auto;
+    /* position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 100px; */
+    background-color: white;
+}
+
+.logo {
+    display: flex;
+    gap: 7px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+ul {
+    display: flex;
+    gap: 10px;
+}
+
+.links i {
+    display: none;
+}
+
+li {
+    list-style-type: none;
+    font-size: 16px;
+}
+
+.fa-sharp {
+    font-size: 25px;
+}
+
+.btn {
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: white;
+}
+
+/* ----------------------------------------------NAVBAR SECTION--------------------------------------- */
+/* -----------------------------------------------HEADER WORK------------------------------------------- */
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 40px;
+
+}
+
+.para {
+    padding-top: 25px;
+    font-size: 16px;
+    line-height: 1.9;
+    color: black;
+    width: 50%;
+}
+
+h1 {
+    color: black;
+    width: 45%;
+    font-size: 50px;
+    padding-top: 40px;
+    font-weight: 700;
+}
+
+.left {
+    width: 50%;
+    margin: auto;
+    padding-left: 20px;
+}
+
+.right {
+    width: 40%;
+}
+
+.image {
+    margin-top: 40px;
+}
+
+.butt {
+    width: 250px;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-color: black;
+    margin-top: 20px;
+
+}
+
+.header-responsive {
+    display: none;
+}
+
+
+
+/* -----------------------------------------------HEADER WORK------------------------------------------- */
+/* --------------------------------------------IMAGES SECTION--------------------------------------------- */
+.images {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.images {
+    margin-top: 30px;
+    height: 40px;
+}
+
+/* --------------------------------------------IMAGES SECTION--------------------------------------------- */
+/* ---------------------------------------------SERVICE SECTION------------------------------------------- */
+.service {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+    margin-top: 30px;
+}
+
+.service p {
+    width: 40%;
+    font-size: 16px;
+}
+
+.service button {
+    width: 150px;
+    height: 40px;
+    font-size: 25px;
+    background-color: rgb(112, 241, 112);
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+/* ---------------------------------------------SERVICE SECTION------------------------------------------- */
+/* ------------------------------------------CARDS SECTION--------------------------------------------------- */
+.cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    padding: 20px 20px;
+}
+
+.card-one {
+    width: 400px;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 20px;
+
+}
+
+.card-two {
+    width: 400px;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: lightgreen;
+
+}
+
+.content h3 {
+    width: 160px;
+}
+
+/* ------------------------------------------CARDS SECTION--------------------------------------------------- */
+/* ---------------------------------------------MEDIA QUERY------------------------------------------------ */
+@media only screen and (max-width: 320px) {
+
+    ul {
+        display: none;
+    }
+
+    .links i {
+        display: block;
+        font-size: 25px;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .header-responsive {
+        display: block;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .para {
+        width: 100%;
+        margin-left: 20px;
+    }
+
+    h1 {
+        width: 100%;
+    }
+
+    .image {
+        width: 300px;
+        height: 320px;
+    }
+
+    .butt {
+        width: 320px;
+        height: 50px;
+    }
+
+    .images {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 20px;
+    }
+
+
+    .service button {
+        display: block;
+
+    }
+
+    .service p {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .service {
+        flex-direction: column;
+        margin-top: 210px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+}
+
+/* ---------------------------------------------MEDIA QUERY------------------------------------------------ */
